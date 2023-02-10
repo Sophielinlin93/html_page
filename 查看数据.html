@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>查看数据</title>
+    <style type="text/css">
+        body {
+            background-color: #f6f6f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            width: 100%;
+            object-fit: fill;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -o-crisp-edges;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated; /*chrome*/
+            image-rendering: -moz-crisp-edges; /*Firefox*/
+            -ms-interpolation-mode: nearest-neighbor;
+        }
+
+        .container {
+            padding: 20px;
+            font-size: 15px !important;
+            width: 66%;
+        }
+
+        .container p {
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+        .container .key {
+            border-bottom: 1px dashed rgb(0, 181, 204);
+            margin-right: 5px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .table th,
+        .table td {
+            text-align: center;
+            border: 1px solid #6e6e6e;
+            line-height: 30px;
+        }
+
+        .passport {
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <!-- 这里的地址改一下， 图片不清晰没有办法 -->
+    <img class="logo" src="/api/static/upload/img/logo2.png"/>
+<!--    <img class="logo" src="https://img1.baidu.com/it/u=554809536,2732110137&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=560"/>-->
+</div>
+<div class="container" style="font-size: 16px;">
+    <div style="position:absolute; right: 2%; width: 25%; margin: 10px auto;">
+        <img style="width: 100%;" src="https://s3-toc.s3-eu-west-2.amazonaws.com/tghsjc/product/photos/bf4917b32b6a432692888cb5b2214110.png"/>
+        <!--        <img style="width: 100%;" src="https://img1.baidu.com/it/u=554809536,2732110137&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=560"/>-->
+
+    </div>
+    <p>
+        <span class="key">Name:</span>
+        <span class="passport">LIN LIN</span>
+    </p>
+    <p>
+        <span class="key">Passport/ID number:</span>
+        <span class="passport">EF9896840</span>
+    </p>
+    <!--    <p th:if="${codeInfo.satcode} != null">Satcode: <span th:text="${codeInfo.satcode}"> </span></p>-->
+    <p>
+        <span class="key">Sex:</span>
+        <span class="passport">Female</span>
+    </p>
+    <p>
+        <span class="key">Age:</span>
+        <span class="passport">29</span>
+        <span> Years</span>
+    </p>
+    <p>
+        <span class="key">DOB:</span>
+        <span class="passport">03-09-1993</span>
+    </p>
+    <p>
+        <span class="key">Collection Date:</span>
+        <span class="passport">04-03-2023(9:39 AM)</span>
+    
+    <!--    <p th:if="${codeInfo.receivedDate} != null">ReceivedDate: <span-->
+    <!--            th:text="${codeInfo.receivedDate}"> 2022-03-30</span></p>-->
+    <!--    <p th:if="${codeInfo.iggReceivedDate} != null">IggAndIgmReceivedDate: <span-->
+    <!--            th:text="${codeInfo.iggReceivedDate}"> 2022-03-30</span></p>-->
+    <p>
+        <span class="key">Reported Date:</span>
+        <span class="passport">04-03-2023</span>
+    
+    <p>
+        <span class="key">Lab Number:</span>
+        <span class="passport">A.230110-00045</span></p>
+    
+    <p>
+        <span class="key">CT of ORF1ab Gene:</span>
+        <span>N/A</span>
+        
+    </p>
+    <p>
+        <span class="key">CT of N Gene:</span>
+        <span>N/A</span>
+        
+    </p>
+
+    <p>
+        <span class="key">CT of RdRp Gene:</span>
+        <span>N/A</span>
+        
+    </p>
+
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Test</th>
+            <th>Result</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>COVID-19 (RT-PCR)(6hr)</td>
+            <td>
+                
+                <span style="color: green;">Not Detected</span>
+                
+                
+                
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+</body>
+
+</html>
